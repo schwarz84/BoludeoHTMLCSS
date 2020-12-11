@@ -1,0 +1,40 @@
+div {
+   font-family: 'Arial';
+   background-color: #159f27;
+   margin: 10px 10px;
+   text-align: center;
+   font-weight: bolder;
+   padding: 15px 30px;
+   width: 80px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.hoja {
+   -webkit-transform: translateX(0);
+}
+
+.hoja:before {
+   content: '';
+   position: absolute;
+   right: 0px;
+   top: 0px;
+
+   width: 0px;
+   height: 0px;
+   background-color: black;
+
+   background: -webkit-linear-gradient(
+      45deg,
+      #4bee61,
+      #28c43d 45%,
+      #159f27 50%,
+      white 51%
+      );
+      transition-duration: 0.5s;
+}
+
+.hoja:hover:before {
+   width: 30px;
+   height: 30px;
+}

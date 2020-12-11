@@ -1,0 +1,20 @@
+div {
+   font-family: 'Arial';
+   background-color: #44c346;
+   margin: 10px 10px;
+   text-align: center;
+   font-weight: bolder;
+   padding: 15px 30px;
+   width: 80px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.sombra_externa {
+   box-shadow: 0px 0px 1px black;
+}
+
+.sombra_externa:hover {
+   box-shadow: 2px 3px 3px black;
+   transition-duration: 0.3s;
+}

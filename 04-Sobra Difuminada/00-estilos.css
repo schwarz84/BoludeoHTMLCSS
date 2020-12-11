@@ -1,0 +1,20 @@
+div {
+   font-family: 'Arial';
+   background-color: rgb(226, 231, 40);
+   margin: 10px 10px;
+   text-align: center;
+   font-weight: bolder;
+   padding: 15px 30px;
+   width: 80px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.SombraDifuminada {
+   box-shadow: 0px 0px 1px rgba(0,0,0,1);
+}
+
+.SombraDifuminada:hover {
+   box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+   transition-duration: 0.5s;
+}

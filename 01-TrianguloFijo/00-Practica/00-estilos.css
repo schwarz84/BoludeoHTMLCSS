@@ -1,0 +1,134 @@
+div{
+   font-family: sans-serif;
+   background-color: #e61831;
+   width: 80px;
+   margin: 30px 30px 30px 100px;
+   text-align: center;
+   font-weight: bolder;
+   padding: 30px 30px;
+   vertical-align: middle;
+}
+
+/*  Triangulo de Arriba*/
+.top {
+   -webkit-transform: translateX(0);
+}
+
+.top:before {
+   content: '';
+   border-style: solid;
+   border-width:  0px
+                  25px
+                  25px
+                  25px;
+   border-color:  transparent
+                  transparent
+                  #e61831
+                  transparent;
+   position: absolute;
+   left:32.5%;
+   top:0%;
+}
+
+.top:hover:before {
+   top: -25px;
+   transition-duration: 0.5s;
+}
+
+.top:hover {
+   -webkit-transform: translateY(25px);
+   transition-duration: 0.5s;
+}
+
+/* Tringulo Derecha */
+.right {
+   -webkit-transform: translateX(0);
+}
+
+.right:before {
+   content: '';
+   border-style: solid;
+   border-width:  25px
+                  0px
+                  25px
+                  25px;
+   border-color:  transparent
+                  transparent
+                  transparent
+                  #e61831;
+   position: absolute;
+   right: 0px;
+   top: 12.5%;
+}
+
+.right:hover:before {
+   right: -25px;
+   transition-duration: 0.5s;
+}
+
+.right:hover {
+   -webkit-transform: translateX(-25px);
+   transition-duration: 0.5s;
+}
+
+/* Triangulo de Abajo */
+.bottom {
+   -webkit-transform: translateX(0);
+}
+
+.bottom:before {
+   content: '';
+   border-style: solid;
+   border-width:  25px
+                  25px
+                  0px
+                  25px;
+   border-color:  #e61831
+                  transparent
+                  transparent
+                  transparent;
+   position: absolute;
+   bottom: 0%;
+   left: 32.5%;
+}
+
+.bottom:hover:before {
+   bottom: -25px;
+   transition-duration: 0.5s;
+}
+
+.bottom:hover {
+   -webkit-transform: translateY(-25px);
+   transition-duration: 0.5s;
+}
+
+/* Triangulo Izquierda */
+.left {
+   -webkit-transform: translateX(0);
+}
+
+.left:before {
+   content: '';
+   border-style: solid;
+   border-width:  25px
+                  25px
+                  25px
+                  0px;
+   border-color:  transparent
+                  #e61831
+                  transparent
+                  transparent;
+   position: absolute;
+   left: 0%;
+   top: 12.5%;
+}
+
+.left:hover:before {
+   left: -25px;
+   transition-duration: 0.5s;
+}
+
+.left:hover {
+   -webkit-transform: translateX(25px);
+   transition-duration: 0.5s;
+}

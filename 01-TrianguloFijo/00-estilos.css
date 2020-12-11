@@ -1,0 +1,41 @@
+div{
+	font-family: 'Arial';
+	background-color: #a8cf45;
+	margin: 10px 10px;
+	text-align: center;
+	font-weight: bolder;
+	padding: 15px 30px;
+	width: 80px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.triangulo_fijo {
+	-webkit-transform: translateX(0);
+}
+
+.triangulo_fijo:before{
+	content: '';
+	border-style: solid;
+	border-width: 	0px
+						25px
+						25px
+						25px;
+	border-color: 	transparent
+						transparent
+						#a8cf45
+						transparent;
+	position: absolute;
+	left: 32.5%;
+	top: 0%;
+}
+
+.triangulo_fijo:hover:before{
+	top: -25px;
+	transition-duration: 0.5s;
+}
+
+.triangulo_fijo:hover{
+	-webkit-transform:translateY(25px);
+	transition-duration: 0.5s;
+}

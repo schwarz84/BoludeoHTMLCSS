@@ -1,0 +1,38 @@
+body {
+   background: #a40456;
+}
+div {
+   font-family: 'Arial';
+   background-color: #63e449;
+   margin: 20px 20px;
+   text-align: center;
+   font-weight: bolder;
+   padding: 15px 30px;
+   width: 80px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.reduccion_borde {
+   position: relative;
+}
+
+.reduccion_borde:before {
+   content: '';
+   position: absolute;
+   border: 4px solid white;
+   top: -20px;
+   bottom: -20px;
+   right: -20px;
+   left: -20px;
+   opacity: 0;
+}
+
+.reduccion_borde:hover:before {
+   opacity: 1;
+   top: 0px;
+   bottom: 0px;
+   right: 0px;
+   left: 0px;
+   transition-duration: 0.5s;
+}

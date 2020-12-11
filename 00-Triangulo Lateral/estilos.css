@@ -1,0 +1,38 @@
+div{
+	font-family: 'Arial';
+	background-color: #a8cf45;
+	margin: 10px 10px;
+	text-align: center;
+	font-weight: bolder;
+	padding: 15px 30px;
+	width: 80px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.triangulo_lateral{
+	-webkit-transform: translateX(0);/* para que no se desplace */
+}
+.triangulo_lateral:before{
+	content: '';
+	/* hago el triangulo dandole 0 px al estremo inverso del triangulo */
+	border-style: solid;
+	border-width: 	15px
+						15px
+						15px
+						0px;
+	/* pongo transparente todos menos el extremo del triangulo */
+	border-color:	transparent
+						#a8cf45
+						transparent
+						transparent;
+
+	position: absolute;
+	left: 0px;
+	top: 35%;
+}
+
+.triangulo_lateral:hover:before{
+	left: -15px;
+	transition-duration: 0.5s;
+}
